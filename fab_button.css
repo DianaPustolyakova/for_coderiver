@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: black;
+    font-weight: bold;
+}
+input, textarea  {
+    background-color: #6e872a;
+    padding: 5px;
+}
+.titles {
+    margin-bottom: 10px;
+}
+
+form {
+    display: block;
+    background-color:#acc960;
+    text-align: center;
+    width: 35%;
+    margin: 10%;
+    padding: 10px;
+    height: 600px;
+    padding-bottom: 30px;
+
+}
+.form {
+    position: relative;
+    left: 600px;
+    bottom: 100px;
+}
+p {
+    padding: 10px 10px;
+}
+.head_title {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.near_block{
+    display: block;
+    background-color: #C0FF14;
+    width: 75%;
+    height: 30%;
+    margin: 10% 14%;
+    position: absolute;
+}
+.round {
+    position: absolute;
+    top: -130px;
+    left: 10px;
+    background-color: #3c4a14;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%
+
+}
+.image_round {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -100px;
+    left: 50px;
+    background-image: url(./pictures/fab.svg);
+}
+
+#submit{
+    width: 125px;
+    height: 40px;
+    border: none;
+    background-color: #6c784a;
+    font-size: 15px;
+}
+

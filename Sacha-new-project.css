@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px 9%;
+    font-size: 25px;
+}
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.nav_image{
+    background-size: 30px;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    margin: 13px;
+    background-repeat: no-repeat;
+}
+.nav_image_house {
+    background-image: url(./pictures/house.svg);
+}
+.nav_image_clock{
+    background-image: url(./pictures/clock.svg);
+}
+.nav_image_phone {
+    background-image: url(./pictures/phone.svg);
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.name {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 70px;
+}
+.name::after{
+    content:"wash";
+    color: rgb(204, 255, 64);
+    font-size: 50px;
+    position: absolute;
+    box-shadow: 10px 5px 5px white;
+}
+
+.main {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.main .main_photo {
+    background-image: url(./pictures/top.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
+}
+.main .greeting  {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    padding: 10px 20px;
+    font-size: 45px;
+    width: 600px;
+    /*animation-duration: 2s;
+    animation-name: slidein;*/
+    transform: translate(0px, 100%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    margin: 20px 40px;
+}
+.main ._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+/*@keyframes slidein {
+    from {
+        left: 100vw;
+    }
+    to {
+        left: 0;
+    }
+}*/
+
+.secondary_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 40px 30px;
+    background-color: black;
+    color: white;
+}
+
+.secondary_menu .secondary_menu_item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-size: 48px;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+
+.menu_item_first::before {
+    content: "";
+    background-image: url(./pictures/second_item_first.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: 5px;
+
+
+}
+.menu_item_second::before{
+    content: "";
+    background-image: url(./pictures/second_item_second.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: 5px;
+}
+.menu_item_third::before {
+    content: "";
+    background-image: url(./pictures/second_item_third.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: 5px;
+}
+.menu_item_fourth::before {
+    content: "";
+    background-image: url(./pictures/second_item_fourth.png);
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    left: -45px;
+    top: 5px;
+}
+.secondary_menu .secondary_menu_item .secondary_menu_title  {
+    display: inline-block;
+    font-size: 21px;
+    color: rgb(204, 255, 64);
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.secondary_menu_subtitle {
+    display: block;
+    font-size: 16px;
+    margin: 0px -40px;
+}
+
+.big_photo{
+    width: 100%;
+    background-color: #C0FF14;
+}
+.big_photo .all_big_photo {
+    display: block;
+    box-sizing: content-box;
+    position: relative;
+}
+.big_photo .all_big_photo .big_photo_side_bg {
+    position: absolute;
+    width: 40%;
+    height: calc(100% + 20px);
+    margin-left: 20px; /*shadow*/
+    /*left: 20px;
+    bottom: -28px;*/
+    background-image: url(./pictures/big_photo.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-duration: 2s;
+    animation-name: slideintwo;
+}
+@keyframes slideintwo {
+    from {
+        margin-left: 100%;
+        width: 40%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 40%;
+    }
+}
+
+.big_photo .goodText {
+    box-sizing: border-box;
+    color: black;
+    padding:10px 27px 10px 40%;
+    height: 600px;
+    text-align: center;
+}
+.big_photo .goodText p {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    padding: 0 0 10px 0;
+    font-weight: bolder;
+}
+.big_photo .goodText span {
+    font-size: 21px;
+}
+.big_photo .goodText div {
+    margin: 70px 0px;
+    padding: 0 120px;
+}
+.third_menu_block {
+    margin: 20px 10px;
+    position: absolute;
+    display: flex;
+    bottom: 100px;
+    width: 800px;
+    right: 80px;
+    text-align: center;
+}
+.third_menu_block p {
+   font-weight: bold;
+    font-size: 21px;
+}
+.third_menu_block span {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin: 12px 10px 20px;
+}
+.third_menu_block a {
+    display: inline-block;
+    letter-spacing: 2px;
+    background-color: rgb(204, 255, 64);
+    color: #222E00 ;
+    font-weight: bold;
+    box-shadow: 10px 10px 10px #0000003b, 10px 10px 10px #0000003b;
+    border: 1px solid #435C00;
+    width: 100px;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.third_menu_block a:hover {
+    background-color: #76A100;
+    color: black;
+    top: 2px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #00000066, 5px 5px 5px #00000066;
+}
+.third_menu_block .price {
+    width: 400px;
+}
+.third_menu_block .help {
+    width: 400px;
+}
+.map iframe{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+
+}
+
+/*.sliders {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    padding: 50px 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+}*/
+/*.sliders div:hover{
+    width: 100%;
+}
+.sliders .photo_first{
+    background-image: url(./pictures/block1.JPG);
+    width: 99%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sliders .photo_second{
+    background-image: url(./pictures/block2.JPG);
+    width: 99%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sliders .photo_third{
+    background-image: url(./pictures/block3.JPG);}
+.sliders .photo_fourth{
+    background-image: url(./pictures/block4.JPG);}*/
+/*.slider__items {
+    counter-reset: slide;
+}
+
+.slider__item {
+    counter-increment: slide;
+}
+
+.slider__item::before {
+    content: counter(slide);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+}*/
+.photo_blocks {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(2,1fr);
+    text-align: center;
+    padding: 20px 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+
+}
+.photo_blocks .container_first {
+    max-width: 1000px;
+}
+.photo_blocks .container_second {
+    max-width: 1000px;
+}
+.photo_blocks .container_third {
+    max-width: 1000px;
+}
+.photo_blocks .container_fourth {
+    max-width: 1000px;
+}
+.photo_blocks .slider__wrapper {
+    overflow: hidden;
+}
+
+.photo_blocks .slider__item {
+    width: 700px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.photo_blocks .slider__item:nth-child(1) {
+    width: 350px;
+    background-image: url(./pictures/block1.JPG);
+}
+
+.photo_blocks .slider__item:nth-child(2) {
+    width: 350px;
+    background-image: url(./pictures/block2.JPG);
+}
+
+
+footer  {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 30px;
+}
+footer div{
+    width: 50%;
+    height: 120px;
+}
+footer p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.fab_button {
+    position: fixed;
+    opacity: 1;
+    right: 2%;
+    bottom: 2%;
+    background-color: #7fa514;
+    border:  2px solid #413f3f;
+    /*!!shadow!!*/
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 67px;
+}
+.fab{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.fab::after{
+    content: "";
+    background-image: url(./pictures/feedback.svg);
+    position: absolute;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    bottom: 10px;
+    opacity: 1;
+
+}
+
+.modal {
+    position: fixed; /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+
+/* при отображении модального окно */
+.modal:target {
+    opacity: 1; /* делаем окно видимым */
+    pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto; /* для отображения модального окна по центру */
+    }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color:  #C0FF14;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid black;
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #A8E600;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: black;
+    opacity: .5;
+    text-decoration: none;
+
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    display: block;
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 50px;
+    overflow: auto;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+
+}
+.modal-body .head_title {
+    color: #C0FF14;
+    font-size: 20px;
+}
+.modal-body p {
+    padding: 7px;
+    color: #C0FF14;
+}
+.modal-body input, textarea  {
+    background-color: #87B800;
+    padding: 5px;
+}
+.modal-body .titles {
+    color: #C0FF14;
+    margin-bottom: 10px;
+}
+.modal-body  #submit{
+    width: 125px;
+    height: 40px;
+    border: none;
+    background-color: #71726b;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1170px){
+    .secondary_menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+}
+@media screen and (max-width: 1050px) {
+
+    .goodText p {
+        font-size: 60px;
+
+    }
+
+    .goodText span {
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 880px)  {
+    .photo {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .goodText p {
+        font-size: 60px;
+
+    }
+    .goodText span {
+        font-size: 30px;
+
+    }
+}
+@media screen and (max-width: 745px) {
+    .goodText p {
+        font-size: 50px;
+    }
+
+    .goodText span {
+        font-size: 25px;
+    }
+
+    .goodText div {
+        padding: 0 150px;
+    }
+
+    .secondary_menu_item {
+        width: 75px;
+    }
+
+    .secondary_menu p {
+        font-size: 55px;
+    }
+
+    .secondary_menu span {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 710px) {
+    nav {
+       font-size: 20px;
+    }
+    .goodText p {
+        font-size: 50px;
+    }
+
+    .goodText span {
+        font-size: 25px;
+    }
+    .goodText div {
+        margin: -60px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .main p {
+        bottom: 10%;
+        padding: 10px 20px;
+        font-size: 40px;
+    }
+    .big_photo .big_photo_side_bg {
+        background-image: none;
+    }
+    .goodText div {
+        padding: 0 0;
+    }
+    .goodText {
+        text-align: center;
+        padding: 10% 20%;
+        font-size: 40px;
+    }
+    .goodText p {
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .goodText span {
+        font-size: 25px;
+    }
+    .blocks img {
+        width: 70px;
+    }
+
+    .secondary_menu p {
+        font-size: 50px;
+    }
+
+    .secondary_menu span {
+        font-size: 20px;
+    }
+    .secondary_menu_item {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 590px) {
+    nav {
+        font-size: 15px;
+    }
+
+    .name {
+        font-size: 90px;
+        padding: 2% 15%;
+        text-align: left;
+    }
+    .name::after {
+        font-size: 60px;
+    }
+
+    .secondary_menu img {
+        width: 60px;
+    }
+
+    .secondary_menu p {
+        font-size: 40px;
+        padding: 5px;
+    }
+
+    .main p {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .secondary_menu {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .secondary_menu span {
+        font-size: 30px;
+    }
+    footer {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 470px){
+
+    .name {
+        font-size: 80px;
+    }
+    .name::after {
+        font-size: 40px;
+    }
+    .main p {
+        font-size: 30px;
+    }
+    .main div {
+        height: 400px;
+    }
+    .photo div {
+        height: 300px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .photo div {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 400px){
+    nav {
+        font-size: 10px;
+    }
+    .name {
+        font-size: 70px;
+    }
+    .name::after {
+        font-size: 35px;
+    }
+    .main p {
+        font-size: 20px;
+    }
+    .goodText p {
+        font-size: 55px;
+    }
+
+    .goodText span {
+        font-size: 20px;
+    }
+    .photo div {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 350px){
+    .name {
+        font-size: 65px;
+    }
+    .name::after {
+        font-size: 30px;
+    }
+    .secondary_menu img {
+        width: 45px;
+    }
+
+    .secondary_menu p {
+        font-size: 40px;
+    }
+
+    .secondary_menu span {
+        font-size: 20px;
+    }
+    .price {
+        font-size: 40px;
+    }
+    .goodText p {
+        font-size: 45px;
+    }
+    .photo div {
+        height: 150px;
+    }
+
+}
+
+
+
+
